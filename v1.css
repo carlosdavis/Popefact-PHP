@@ -1,0 +1,211 @@
+/*
+	Remove HTML Defaults
+*/
+
+:link,:visited { text-decoration: none; }
+
+ul,ol { list-style: none; }
+
+ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,body,html,p,blockquote,fieldset,input { margin: 0px; padding: 0px; }
+
+a img,:link img,:visited img { border:none; }
+
+/*													*/
+
+/* Basic Elements */
+
+* {
+	margin: 0; 
+	padding: 0; 
+}
+body {
+	margin: 0; 
+	padding: 0; 
+
+	background: #CCC; 
+	color: #666; 
+	
+	font-size: 24px;  
+	font-family: Courier, monospace; 
+	text-align: center;
+	
+	text-shadow: 1px 1px 1px #999; 
+}
+h1, h2 {
+	font-weight: normal; 
+}
+a, a:link, a:visited {
+	text-decoration: none; 
+	color: #999; 
+}
+a:hover {
+	color: #FFF; 
+}
+em {
+	font-size: 0.9em; 
+}
+
+#page {
+	margin: 1em auto; 
+	width: 800px; 
+}
+#footer {
+	margin: 4em 0 0.5em; 
+	font-size: 12px; 
+	text-shadow: none; 
+}
+.popefact {
+	height: 60px; 
+	width: 100%; 
+	list-style: none; 
+	
+	margin: 1em 0 5px; 
+	border-bottom: 1px dashed #999; 
+	padding: 0 0 5px; 
+	
+	font-size: 64px; 
+	text-transform: uppercase; 
+	
+	position: relative; 
+}
+	.popefact li {
+		height: 60px; 
+		position: absolute; 
+		top: 0; 
+	}
+	.popefact li.first {
+		right: 50%;
+		padding-right: 5px;  
+	}
+	.popefact li.second {
+		left: 50%; 
+		padding-left: 5px; 
+	}
+.meta {
+	width: 100%; 
+	list-style: none; 
+	
+	margin: 0 0 2em; 
+	
+	font-size: 16px; 
+	text-transform: uppercase; 
+	text-shadow: none; 
+	text-align: left; 
+}
+	.meta li {
+		display: inline; 
+		padding: 0 1em 0 0; 
+	}
+
+#fact-form {
+	margin: 4em auto 0; 
+	border-top: 1px dashed #999; 
+	padding: 1em 0 0;
+}
+	#fact-form label {
+		vertical-align: middle; 
+		padding: 5px 0; 
+	}
+	#fact-form input {
+		width: 200px; 
+		padding: 5px; 
+		border: 1px solid #888; 
+		background: #EEE; 
+		vertical-align: middle; 
+		font-size: 24px;  
+		font-family: Courier, monospace; 
+		color: #999; 
+	}
+	#fact-form input[type=submit] {
+		border: 0px none; 
+		background: transparent none; 
+		width: auto; 
+		text-transform: uppercase; 
+		color: #EEE; 
+		text-shadow: 1px 1px 1px #999; 
+	}
+	
+#sticky {
+	position: fixed; 
+	right: 0; 
+	top: 2em; 
+}
+	#sticky a {
+		display: block;
+		float: right; 
+		clear: both;  
+		width: 30px; 
+		margin: 10px auto 0; 
+		padding: 0.25em 0 0.25em 10px; 
+		text-align: left; 
+		background: #BBB; 
+		
+		-moz-box-shadow: 0px 1px 2px #999; 
+		-webkit-box-shadow: 0px 1px 2px #999; 
+	}
+		#sticky a:hover {
+			padding: 0.25em 30px 0.25em 10px; 
+		}
+
+ul.messages {
+	font-size: 18px; 
+	border: 1px solid #999; 
+	background: #EEE; 
+	
+	width: 67%; 
+	margin: 1em auto; 
+	padding: 0.5em; 
+	
+	text-shadow: none; 
+}
+	ul.messages li {
+	}
+ul.errors {
+	color: #884444; 
+}
+
+#help {
+	display: none; 
+	width: 600px; 
+	padding: 1em 2em; 
+	z-index: 100; 
+	margin: 1em auto; 
+	background: #FFF; 
+	-moz-box-shadow: 0px 1px 4px #999; 
+	-webkit-box-shadow: 0px 1px 4px #999; 
+	
+	font-size: 14px; 
+	color: #666; 
+	text-shadow: none; 
+	text-align: left; 
+}
+	#help a:hover {
+		background: #CCC; 
+	}
+	#help a.close {
+		text-transform: uppercase; 
+		padding: 0.5em; 
+		font-size: 14px; 
+	}
+		#help a.close:hover {
+		}
+	#help h2 {
+		font-size: 18px; 
+		margin: 0 0 0.5em; 
+		border-bottom: 1px dashed #CCC; 
+		padding: 0 0 0.25em; 
+	}
+	#help ol, #help p {
+		margin: 0.5em 0 1em; 
+		padding: 0 2em; 
+	}
+	#help ol {
+		list-style: decimal outside; 
+	}
+		#help li {
+			margin: 0 0 0.5em; 
+		}
+
+a.help, a.close {
+	cursor: pointer; 
+}
