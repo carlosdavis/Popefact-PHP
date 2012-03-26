@@ -1,0 +1,16 @@
+POPE FACT
+---------
+http://popefact.com
+Carlos d'Avis
+
+Here, in its simple glory, is the PHP codebase for the first and only version of the POPE FACT website. Feel free to modify or reuse the code however you like. I offer no support or warranty. 
+
+INSTALLATION
+------------
+1. Copy the files to your web server. You might want to update the .htaccess file. 
+2. Do you have a MySQL database? Please create one. 
+3. Import the schema from popefact.sql into your new database. 
+4. Copy inc/config-example.inc to inc/config.inc. 
+5. Update config.inc with your database connection details. 
+6. Go! 
+

@@ -19,7 +19,7 @@ $legal_op = array(
 /* DATABASE CONNECTION */
 global $dbh; 
 $dbh = mysql_connect(DBHOST, DBUSER, DBPASS); 
-if (!mysql_select_db('popefact', $dbh)) die('Could not select database');
+if (!mysql_select_db(DBNAME, $dbh)) die('Could not select database');
 
 // what do we got from request? Let's get the op and args
 function process_request() {
